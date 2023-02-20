@@ -1,0 +1,23 @@
+{
+  "name": "kitu",
+  "version": "1.0.0",
+  "scripts": {
+    "clean": "rimraf build",
+    "tsc": "tsc",
+    "tsc:w": "tsc -w",
+    "serve": "serve",
+    "watch": "npm-run-all -s clean -p tsc:w serve",
+    "build": "run-s clean tsc"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "mobx": "6"
+  },
+  "devDependencies": {
+    "nodemon": "2",
+    "npm-run-all": "4",
+    "rimraf": "4",
+    "serve": "14",
+    "typescript": "4"
+  }
+}
